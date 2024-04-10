@@ -16,7 +16,7 @@ sudo ./setup_docker_containers.sh
 # 設置 Docker 容器 50G
 command="titan-edge config set --storage-size 50GB"
 
-# 循环進入每個容器，並執行命令
+# 循環進入每個容器，並執行命令
 for i in {1..5}; do
     docker exec -i docker$i bash -c "$command"
     
