@@ -12,10 +12,15 @@ mkdir -p ~/.titanedge5
 
 # 步驟 3：運行五個 Docker 容器，分別使用不同的存儲卷
 docker run -d -v ~/.titanedge1:/root/.titanedge --name docker1 nezha123/titan-edge
+sleep 5  # 等待5秒
 docker run -d -v ~/.titanedge2:/root/.titanedge --name docker2 nezha123/titan-edge
+sleep 5  # 等待5秒
 docker run -d -v ~/.titanedge3:/root/.titanedge --name docker3 nezha123/titan-edge
+sleep 5  # 等待5秒
 docker run -d -v ~/.titanedge4:/root/.titanedge --name docker4 nezha123/titan-edge
+sleep 5  # 等待5秒
 docker run -d -v ~/.titanedge5:/root/.titanedge --name docker5 nezha123/titan-edge
+sleep 5  # 等待5秒
 
 # 步驟 4：提示用户輸入 hash
 echo "請輸入你的 hash: "
