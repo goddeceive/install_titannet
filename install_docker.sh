@@ -9,8 +9,8 @@ sudo apt install -y apt-transport-https ca-certificates curl software-properties
 # 添加 Docker 的官方 GPG 密鑰
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-# 設置 Docker 的穩定版儲存庫
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+# 設置 Docker 的穩定版儲存庫，並自動輸入 Enter 鍵
+echo | sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
 # 更新 apt 包索引
 sudo apt update
