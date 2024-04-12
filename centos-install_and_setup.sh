@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# 安裝git
-sudo yum install git
-
 # 下載代碼庫
 git clone https://github.com/goddeceive/install_titannet.git 
 cd install_titannet/
